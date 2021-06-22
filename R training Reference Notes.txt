@@ -1,0 +1,68 @@
+#myfirstataduringtheworkshop
+id<-c(1,2,3)
+Age<-c(24,56,54)
+Mstatus<-c(1,0,1)
+Gender<-c(0,1,0)
+Csalary<-c(12000,54000,76000)
+Ssalary<-c(10000,50000,54000)
+Yexp<-c(2,10,16)
+Yedu<-c(14,18,16)
+salarydata<-data.frame(id,Age,Mstatus,Gender,Csalary,Ssalary,Yexp,Yedu)
+salarydata
+
+view(salarydata)
+edit(salarydata)
+
+***Entering new data
+
+salarydata2<-data,frame())
+
+****creating a new data on R.
+
+setwd(" ")
+setwd("c:/workshop")
+hsb<-read.csv("hsb.csv")
+hsb
+
+
+
+
+hsb[c(1,20,85,150,200),c("id", "race", "schtyp")]
+
+When you want to see certain records/cases only
+
+hsb[-c(31:39),]
+
+CREATING VARIABLE
+
+hsb $gender<- factor(hsb $female,
+		levels = c(0,1),
+		labels = c("male", "female"))
+hsb
+		
+hsb$score<-appy(hsb[,7:11],1,sum)
+
+require (lattice)
+
+histogram(~score, data=hsb)
+
+hsb $score<-appy(hsb[,7:11],1,sum)
+
+table<-table(race,gender)
+
+ftable=ftable(table1)
+
+#barplot (ftable)
+
+density(~score|rave2, data=hsb)
+
+#DATA ANALYSIS.
+
+#ONE SAMPLE T-TEST
+t,test(score, mu=254)
+
+
+
+
+
+
